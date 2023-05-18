@@ -3,17 +3,25 @@
 
 #include <list>
 
+
+
+struct Coords{                  // Suddividiamo "mentalmente" il canvas in tot rettangoli in modo da poter verificare
+    unsigned short x:8;                  // successivamente quali elementi sono toccati dalla gomma
+    unsigned short y:8;
+};
+
+
 class CanvasObject
 {
 private:
-    struct Coords{
-        short x:8;
-        short y:8;
-    };
     std::list<Coords> CoordsOccupation;
 public:
+
     CanvasObject();
-    virtual ~CanvasObject()=0;
+    virtual ~CanvasObject() = default;
+    virtual void draw()=0;
+    //virtual void UpdateCoords()=0;
+
 };
 
 #endif // CANVASOBJECT_H

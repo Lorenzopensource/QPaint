@@ -19,6 +19,16 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        canvasobject.h
+        canvasobject.cpp
+        tratto.h
+        tratto.cpp
+        retta.h
+        retta.cpp
+        bezier.h
+        bezier.cpp
+        canvas.h
+        canvas.cpp
         ${TS_FILES}
 )
 

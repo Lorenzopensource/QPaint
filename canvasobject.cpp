@@ -1,6 +1,3 @@
 #include "canvasobject.h"
 
-CanvasObject::CanvasObject()
-{
-
-}
+CanvasObject::CanvasObject(){}
